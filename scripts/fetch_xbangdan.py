@@ -140,6 +140,11 @@ def fetch_html(url: str, timeout: int = 30) -> str:
         try:
             resp = requests.get(url, headers=HEADERS, timeout=timeout)
             resp.raise_for_status()
+            # 关键：服务器若不返回 charset，requests 会默认按 ISO-8859-1 解码，
+            # 中文 UTF-8 页面会被读成乱码，导致中文关键词、万/亿指标、榜单区块全匹配不上。
+            # 实测 #2 的 tags.json 就是这么坏的：100 个号只有“今日爆款”，metrics 全空。
+            if resp.encoding is None or resp.encoding.lower() == "iso-8859-1":
+                resp.encoding = resp.apparent_encoding or "utf-8"
             if len(resp.text) < 1000:
                 raise ValueError(f"页面内容过短 ({len(resp.text)} 字节)，疑似被拦截或改版")
             return resp.text
