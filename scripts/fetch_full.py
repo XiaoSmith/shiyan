@@ -3,23 +3,20 @@
 
 为什么不用 requests + BeautifulSoup 直接抓：
   完整榜单的分页、排序都不改 URL，是同页客户端分页。
-  首屏 DOM 里只有第 1 页（账号 20 条、长文 20 张、推文左右各 50 条），
+  首屏 DOM 里只有第 1 页（账号榜 20 条），
   点第 2 页是整批替换数据，不是显隐预载数据。
-  所以只抓一个 URL 只能拿到第 1 页，之前快照里今日涨粉、长文作者为 0、
-  黑马只有 9 条预览，就是这个原因。MCP 是付费的（999 元/年），
+  所以只抓一个 URL 只能拿到第 1 页，黑马页只有 20 条预览。
+  MCP 是付费的（999 元/年），
   且未验证能返回完整榜单，不走那条路；也不凭空猜 /api/ 地址。
 
-数据标签只剩两个（2026-10-27 用户定稿，关系类 6 个标签另见
-relationship-tags.md，不受影响）：
-  - 推文榜 https://xbangdan.com/posts/
-    左右两列各自翻页（增速、曝光各最多 3 页），去重后的号 -> 今日爆款
+数据标签只剩一个：黑马（2026-10-27 用户定稿，关系类 6 个标签另见
+relationship-tags.md，不受影响）。
   - 黑马筛选页 https://xbangdan.com/accounts/?rising=1
     网站已经做了判定和筛选：默认就是 5000 粉以下的新锐号，
     页里出现的号就直接贴黑马，不再自己加一道粉丝/帖均量化兜底重打分。
-已删除：今日涨粉（账号榜涨粉排序）、长文作者（长文榜 12 页）、
+已删除：今日爆款（推文榜，帖子热度转成号标签，用户认为没用）、
+今日涨粉（账号榜涨粉排序）、长文作者（长文榜 12 页）、
 全部赛道标签（AI、加密、搞钱、科技、时事的关键词打分）。
-删的理由：长文和涨粉遇到率低、与爆款/黑马重叠大，赛道关键词是
-我们自己在打分而不是网站的判定，且时事这类标签几乎人人都有。
 
 依赖：playwright（浏览器）、beautifulsoup4（解析）。
   pip install playwright beautifulsoup4
@@ -49,7 +46,6 @@ from fetch_xbangdan import (  # noqa: E402
 
 BASE = "https://xbangdan.com"
 ACCOUNTS_RISING = f"{BASE}/accounts/?rising=1"
-POSTS_URL = f"{BASE}/posts/"
 
 
 def parse_accounts_html(html: str) -> list[dict]:
@@ -128,13 +124,6 @@ def parse_accounts_html(html: str) -> list[dict]:
     return rows
 
 
-def parse_posts_html(html: str) -> dict[str, dict]:
-    """解析推文榜单页（单页，两列合在一起）。复用旧脚本的卡片逻辑。"""
-    from fetch_xbangdan import parse_posts_page
-
-    return parse_posts_page(html)
-
-
 def next_button(page):
     """找“下一页”按钮，找不到或已禁用返回 None。"""
     for locator in [
@@ -197,59 +186,6 @@ def collect_pages(page, url: str, parse_fn, max_pages: int,
     return results
 
 
-def collect_posts_pages(page, max_pages_per_list: int = 3) -> dict[str, dict]:
-    """推文榜左右两列各自翻页。两列的下一页按钮是独立的，按顺序各点各的。
-
-    若按钮定位失败，退回只用首屏数据并打印警告，不让整次运行失败。
-    """
-    print(f"[fetch] 推文榜 {POSTS_URL}")
-    page.goto(POSTS_URL, wait_until="domcontentloaded", timeout=60000)
-    page.wait_for_timeout(2000)
-    merged: dict[str, dict] = {}
-    order = 0
-
-    def merge_one(parsed: dict[str, dict]):
-        nonlocal order
-        for key, entry in parsed.items():
-            if key not in merged:
-                order += 1
-                merged[key] = {
-                    "handle": entry["handle"],
-                    "display_name": entry["display_name"],
-                    "rank_posts": order,
-                    "metrics": {},
-                }
-            for k, v in entry.get("metrics", {}).items():
-                merged[key]["metrics"].setdefault(k, v)
-
-    merge_one(parse_posts_html(page.content()))
-    # 左右两列的下一页按钮：按页面上出现的顺序取前两个，分别点。
-    try:
-        btns = page.locator("button", has_text="下一页")
-        count = btns.count()
-    except Exception:
-        count = 0
-    print(f"[parse] 推文榜下一页按钮数：{count}")
-    for btn_idx in range(min(count, 2)):
-        for _ in range(max_pages_per_list - 1):
-            try:
-                btn = page.locator("button", has_text="下一页").nth(btn_idx)
-                if not btn.is_enabled():
-                    break
-                before = page.content()
-                btn.click(timeout=10000)
-                page.wait_for_timeout(2000)
-                after = page.content()
-                if first_handle_of(after) == first_handle_of(before):
-                    break
-                merge_one(parse_posts_html(after))
-            except Exception as exc:
-                print(f"[parse] 推文榜第 {btn_idx + 1} 列翻页失败：{exc}")
-                break
-    print(f"[parse] 推文榜去重后共 {len(merged)} 个号")
-    return merged
-
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default="tags.json")
@@ -264,19 +200,13 @@ def main() -> int:
               file=sys.stderr)
         return 2
 
-    posts: dict[str, dict] = {}
     rising_rows: list[dict] = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--no-sandbox"])
         page = browser.new_page(user_agent=HEADERS["User-Agent"])
         try:
-            # 1. 推文榜（两列翻页）-> 今日爆款
-            try:
-                posts = collect_posts_pages(page)
-            except Exception as exc:
-                print(f"[error] 推文榜抓取失败：{exc}", file=sys.stderr)
-            # 2. 黑马筛选页，39 页全翻，页里出现的号都算黑马
+            # 黑马筛选页，39 页全翻，页里出现的号都算黑马
             try:
                 pages = collect_pages(page, ACCOUNTS_RISING, parse_accounts_html,
                                       max_pages=39, label="黑马榜")
@@ -294,14 +224,6 @@ def main() -> int:
             "handle": handle, "display_name": handle, "tags": [], "metrics": {},
         })
 
-    # 推文榜 -> 今日爆款（全量去重，不再封顶 100）
-    for key, entry in posts.items():
-        out = get_entry(key, entry["handle"])
-        out["display_name"] = entry["display_name"] or out["display_name"]
-        for k, v in entry["metrics"].items():
-            out["metrics"].setdefault(k, v)
-        out["tags"].append("今日爆款")
-
     # 黑马：网站黑马页里出现的号直接贴，不再自己设粉丝/帖均门槛
     for row in rising_rows:
         key = row["handle"].lower()
@@ -317,21 +239,20 @@ def main() -> int:
         for t in v["tags"]:
             if t not in seen:
                 seen.append(t)
-        v["tags"] = seen[:2]
+        v["tags"] = seen
 
-    hot = sum(1 for v in accounts.values() if "今日爆款" in v["tags"])
-    black_n = sum(1 for v in accounts.values() if "黑马" in v["tags"])
-    print(f"[result] 有标签的号 {len(accounts)} 个，"
-          f"其中今日爆款 {hot} 个、黑马 {black_n} 个")
-
-    if len(accounts) < 20 or hot < 10 or black_n < 10:
-        print("[error] 解析到的号低于阈值，拒绝覆盖旧数据", file=sys.stderr)
+    black_n = len(accounts)
+    print(f"[result] 黑马 {black_n} 个")
+    # 黑马页预期约 763 条，阈值 100 是为了防翻页中途失败只拿到一两页
+    # 就覆盖旧数据，低于 100 直接失败不覆盖。
+    if black_n < 100:
+        print("[error] 黑马数低于阈值，拒绝覆盖旧数据", file=sys.stderr)
         return 2
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "source": "xbangdan.com",
-        "source_pages": [POSTS_URL, ACCOUNTS_RISING],
+        "source_pages": [ACCOUNTS_RISING],
         "accounts": accounts,
     }
     if args.dry_run:
