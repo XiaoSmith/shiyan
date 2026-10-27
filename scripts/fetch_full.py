@@ -9,19 +9,17 @@
   黑马只有 9 条预览，就是这个原因。MCP 是付费的（999 元/年），
   且未验证能返回完整榜单，不走那条路；也不凭空猜 /api/ 地址。
 
-抓取范围（默认筛选，不改赛道/时间）：
-  - 账号榜涨粉排序 https://xbangdan.com/accounts/?sort=follow&time=t
-    前 100 名 -> 今日涨粉（2000 条全贴没有意义，尾巴都是 +6、+7 粉）
+数据标签只剩两个（2026-10-27 用户定稿，关系类 6 个标签另见
+relationship-tags.md，不受影响）：
+  - 推文榜 https://xbangdan.com/posts/
+    左右两列各自翻页（增速、曝光各最多 3 页），去重后的号 -> 今日爆款
   - 黑马筛选页 https://xbangdan.com/accounts/?rising=1
     网站已经做了判定和筛选：默认就是 5000 粉以下的新锐号，
     页里出现的号就直接贴黑马，不再自己加一道粉丝/帖均量化兜底重打分。
-    那道兜底是以前只能拿到首页 9 条预览时的权宜之计，
-    现在能翻完整页了，它就是多余的判断，应该删掉。
-  - 长文榜 https://xbangdan.com/articles/
-    7 天 222 篇全量（12 页），去重后的作者 -> 长文作者
-  - 推文榜 https://xbangdan.com/posts/
-    左右两列各自翻页（增速、曝光各最多 3 页），去重后的号 -> 今日爆款，
-    不再封顶 100（全量本来就是 146 + 141 左右，封顶会丢尾巴）
+已删除：今日涨粉（账号榜涨粉排序）、长文作者（长文榜 12 页）、
+全部赛道标签（AI、加密、搞钱、科技、时事的关键词打分）。
+删的理由：长文和涨粉遇到率低、与爆款/黑马重叠大，赛道关键词是
+我们自己在打分而不是网站的判定，且时事这类标签几乎人人都有。
 
 依赖：playwright（浏览器）、beautifulsoup4（解析）。
   pip install playwright beautifulsoup4
@@ -45,24 +43,13 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fetch_xbangdan import (  # noqa: E402
     HEADERS,
-    TRACK_KEYWORDS,
-    classify_track,
-    extract_metrics,
     handle_from_href,
-    item_metrics_text,
     parse_number,
 )
 
 BASE = "https://xbangdan.com"
-ACCOUNTS_FOLLOW = f"{BASE}/accounts/?sort=follow&time=t"
 ACCOUNTS_RISING = f"{BASE}/accounts/?rising=1"
-ARTICLES_URL = f"{BASE}/articles/"
 POSTS_URL = f"{BASE}/posts/"
-
-FOLLOW_TOP_N = 100
-# 注意：FOLLOW_TOP_N 是截断，不是重打分。网站给的是 2000 名的排名，
-# 二值标签总得有个截断点，前 100 名就是这个截断点；
-# 黑马、长文、爆款则不截断，直接取网站整页。
 
 
 def parse_accounts_html(html: str) -> list[dict]:
@@ -139,30 +126,6 @@ def parse_accounts_html(html: str) -> list[dict]:
                     metrics[mkey] = v
         rows.append({"handle": handle, "metrics": metrics})
     return rows
-
-
-def parse_articles_html(html: str) -> list[dict]:
-    """解析长文榜单页（单页）。卡片链接为 x.com/<handle>/status/<id>。
-
-    卡片文本含曝光和收藏两个独立数字，如 "44.7万曝光 6722收藏"。
-    """
-    soup = BeautifulSoup(html, "html.parser")
-    out = []
-    for a in soup.find_all("a", href=True):
-        handle = handle_from_href(a["href"])
-        if not handle or "/status/" not in a["href"]:
-            continue
-        text = item_metrics_text(a, handle)
-        metrics = extract_metrics(text)
-        # extract_metrics 已认“收藏”；再补短写“藏”（如 "2.5万藏"）。
-        if "bookmarks" not in metrics:
-            m = re.search(r"([\d,\.]+[万亿千]?)\s*藏(?![书])", text)
-            if m:
-                v = parse_number(m.group(1))
-                if v is not None:
-                    metrics["bookmarks"] = v
-        out.append({"handle": handle, "metrics": metrics, "text": text})
-    return out
 
 
 def parse_posts_html(html: str) -> dict[str, dict]:
@@ -254,12 +217,8 @@ def collect_posts_pages(page, max_pages_per_list: int = 3) -> dict[str, dict]:
                     "handle": entry["handle"],
                     "display_name": entry["display_name"],
                     "rank_posts": order,
-                    "texts": [],
                     "metrics": {},
                 }
-            for t in entry.get("texts", []):
-                if t not in merged[key]["texts"]:
-                    merged[key]["texts"].append(t)
             for k, v in entry.get("metrics", {}).items():
                 merged[key]["metrics"].setdefault(k, v)
 
@@ -306,28 +265,18 @@ def main() -> int:
         return 2
 
     posts: dict[str, dict] = {}
-    follow_rows: list[dict] = []
     rising_rows: list[dict] = []
-    article_rows: list[dict] = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--no-sandbox"])
         page = browser.new_page(user_agent=HEADERS["User-Agent"])
         try:
-            # 1. 推文榜（两列翻页）
+            # 1. 推文榜（两列翻页）-> 今日爆款
             try:
                 posts = collect_posts_pages(page)
             except Exception as exc:
                 print(f"[error] 推文榜抓取失败：{exc}", file=sys.stderr)
-            # 2. 账号榜涨粉排序，前 5 页 = 前 100 名
-            try:
-                pages = collect_pages(page, ACCOUNTS_FOLLOW, parse_accounts_html,
-                                      max_pages=5, label="账号榜涨粉")
-                for rows in pages:
-                    follow_rows.extend(rows)
-            except Exception as exc:
-                print(f"[error] 账号榜涨粉抓取失败：{exc}", file=sys.stderr)
-            # 3. 黑马筛选页，39 页全翻，页里出现的号都算黑马，不再二次筛选
+            # 2. 黑马筛选页，39 页全翻，页里出现的号都算黑马
             try:
                 pages = collect_pages(page, ACCOUNTS_RISING, parse_accounts_html,
                                       max_pages=39, label="黑马榜")
@@ -335,14 +284,6 @@ def main() -> int:
                     rising_rows.extend(rows)
             except Exception as exc:
                 print(f"[error] 黑马榜抓取失败：{exc}", file=sys.stderr)
-            # 4. 长文榜，12 页全量
-            try:
-                pages = collect_pages(page, ARTICLES_URL, parse_articles_html,
-                                      max_pages=12, label="长文榜")
-                for rows in pages:
-                    article_rows.extend(rows)
-            except Exception as exc:
-                print(f"[error] 长文榜抓取失败：{exc}", file=sys.stderr)
         finally:
             browser.close()
 
@@ -360,18 +301,6 @@ def main() -> int:
         for k, v in entry["metrics"].items():
             out["metrics"].setdefault(k, v)
         out["tags"].append("今日爆款")
-        track = classify_track(entry.get("texts", []))
-        if track:
-            out["tags"].append(track)
-
-    # 账号榜涨粉排序前 100 -> 今日涨粉
-    for rank, row in enumerate(follow_rows[:FOLLOW_TOP_N], start=1):
-        key = row["handle"].lower()
-        out = get_entry(key, row["handle"])
-        for k, v in row["metrics"].items():
-            out["metrics"].setdefault(k, v)
-        if "今日涨粉" not in out["tags"]:
-            out["tags"].append("今日涨粉")
 
     # 黑马：网站黑马页里出现的号直接贴，不再自己设粉丝/帖均门槛
     for row in rising_rows:
@@ -382,45 +311,27 @@ def main() -> int:
         if "黑马" not in out["tags"]:
             out["tags"].append("黑马")
 
-    # 长文榜作者去重 -> 长文作者
-    for row in article_rows:
-        key = row["handle"].lower()
-        out = get_entry(key, row["handle"])
-        for k, v in row["metrics"].items():
-            if k == "bookmarks":
-                out["metrics"][k] = max(out["metrics"].get(k, 0), v)
-            else:
-                out["metrics"].setdefault(k, v)
-        if "长文作者" not in out["tags"]:
-            out["tags"].append("长文作者")
-
     accounts = {k: v for k, v in merged.items() if v["tags"]}
     for v in accounts.values():
         seen: list[str] = []
         for t in v["tags"]:
             if t not in seen:
                 seen.append(t)
-        v["tags"] = seen[:3]
+        v["tags"] = seen[:2]
 
     hot = sum(1 for v in accounts.values() if "今日爆款" in v["tags"])
-    follow_n = sum(1 for v in accounts.values() if "今日涨粉" in v["tags"])
     black_n = sum(1 for v in accounts.values() if "黑马" in v["tags"])
-    long_n = sum(1 for v in accounts.values() if "长文作者" in v["tags"])
-    print(f"[result] 有标签的号 {len(accounts)} 个，其中今日爆款 {hot} 个、"
-          f"今日涨粉 {follow_n} 个、黑马 {black_n} 个、长文作者 {long_n} 个")
+    print(f"[result] 有标签的号 {len(accounts)} 个，"
+          f"其中今日爆款 {hot} 个、黑马 {black_n} 个")
 
-    if len(accounts) < 20 or hot < 10:
+    if len(accounts) < 20 or hot < 10 or black_n < 10:
         print("[error] 解析到的号低于阈值，拒绝覆盖旧数据", file=sys.stderr)
-        return 2
-    if follow_n < 10 and long_n < 10:
-        print("[error] 今日涨粉和长文作者都少于 10 个，说明完整榜单页抓取失败，"
-              "拒绝覆盖旧数据", file=sys.stderr)
         return 2
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "source": "xbangdan.com",
-        "source_pages": [POSTS_URL, ACCOUNTS_FOLLOW, ACCOUNTS_RISING, ARTICLES_URL],
+        "source_pages": [POSTS_URL, ACCOUNTS_RISING],
         "accounts": accounts,
     }
     if args.dry_run:
