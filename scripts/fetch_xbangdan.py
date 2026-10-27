@@ -156,21 +156,46 @@ def fetch_html(url: str, timeout: int = 30) -> str:
     raise RuntimeError(f"抓取 {url} 3 次均失败：{last_error}")
 
 
-def nearby_metrics_text(tag) -> str:
-    """取链接最近的容器文本，用于提取曝光/点赞/粉丝数等指标。
+def item_metrics_text(tag, handle: str) -> str:
+    """取链接所在帖子/账号卡片自身的文本，用于提取曝光/点赞/粉丝数等指标。
 
-    只往上走两级、且绝不走到 body/html，避免把整页文本当成某个号的指标
-    （之前测试里这正是导致后一个号复用前一个号指标的 bug）。
+    根因（#3 实测）：旧版只往上走两级取父容器文本，而榜单区块是一个大容器
+    装着全部条目，父容器文本的前 500 字对所有号都一样，于是所有号都读到
+    第一名的指标：111 个号共用 303.8万曝光、131 个号共用 18783 赞、
+    9 个黑马号共用 2743 粉丝 + 11.9万帖均，连“6.7万帖均”都被误读成 67000 帖。
+
+    修法：往上爬时找“最大的、但不含其他号链接”的祖先容器——卡片级容器
+    含本条指标、又不含其他条；一旦祖先含其他号链接就停在上一级，绝不取
+    整个榜单区块的文本。卡片内若没有指标，再看链接后同级的兄弟节点，
+    遇到下一个号链接即停，这样平铺列表也不会串号。
     """
-    parent = tag.parent
-    for _ in range(2):
-        if parent is None or parent.name in ("body", "html", "[document]"):
-            return ""
-        text = parent.get_text(" ", strip=True)
-        if text:
-            return text[:500]
-        parent = parent.parent
-    return ""
+    key = handle.lower()
+    container = tag
+    for ancestor in tag.parents:
+        if ancestor.name in ("body", "html", "[document]"):
+            break
+        other = False
+        for a in ancestor.find_all("a", href=True):
+            h = handle_from_href(a["href"])
+            if h and h.lower() != key:
+                other = True
+                break
+        if other:
+            break
+        container = ancestor
+    text = container.get_text(" ", strip=True)
+    if extract_metrics(text):
+        return text
+    # 平铺结构兜底：指标在链接后面的兄弟节点里，串到下一个号链接为止。
+    parts = [text]
+    for sib in tag.next_siblings:
+        if getattr(sib, "name", None) == "a" and handle_from_href(sib.get("href", "")):
+            break
+        if hasattr(sib, "get_text"):
+            parts.append(sib.get_text(" ", strip=True))
+        elif isinstance(sib, str):
+            parts.append(sib.strip())
+    return " ".join(p for p in parts if p)
 
 
 def extract_metrics(text: str) -> dict:
@@ -211,10 +236,11 @@ def parse_posts_page(html: str) -> dict[str, dict]:
                 "texts": [],
                 "metrics": {},
             }
-        text = nearby_metrics_text(a)
+        text = item_metrics_text(a, handle)
         if text and text not in accounts[key]["texts"]:
             accounts[key]["texts"].append(text)
-            accounts[key]["metrics"].update(extract_metrics(text))
+            for _k, _v in extract_metrics(text).items():
+                accounts[key]["metrics"].setdefault(_k, _v)
     return accounts
 
 
@@ -247,10 +273,11 @@ def parse_home_page(html: str) -> dict[str, dict]:
             })
             if current_tag and current_tag not in entry["sections"]:
                 entry["sections"].append(current_tag)
-            text = nearby_metrics_text(el)
+            text = item_metrics_text(el, handle)
             if text and text not in entry["texts"]:
                 entry["texts"].append(text)
-                entry["metrics"].update(extract_metrics(text))
+                for _k, _v in extract_metrics(text).items():
+                    entry["metrics"].setdefault(_k, _v)
 
     # 头像文件名交叉验证：补上链接里没出现的号（只补，不单独成标签依据）。
     for img in soup.find_all("img", src=True):
@@ -299,7 +326,8 @@ def build_tags(posts: dict, home: dict) -> dict:
     for key, entry in posts.items():
         out = get_entry(key, entry["handle"])
         out["display_name"] = entry["display_name"] or out["display_name"]
-        out["metrics"].update(entry["metrics"])
+        for _k, _v in entry["metrics"].items():
+            out["metrics"].setdefault(_k, _v)
         if entry.get("rank_posts") and entry["rank_posts"] <= 100:
             out["tags"].append("今日爆款")
         track = classify_track(entry["texts"])
@@ -310,7 +338,8 @@ def build_tags(posts: dict, home: dict) -> dict:
     for key, entry in home.items():
         out = get_entry(key, entry["handle"])
         out["display_name"] = entry["display_name"] or out["display_name"]
-        out["metrics"].update(entry["metrics"])
+        for _k, _v in entry["metrics"].items():
+            out["metrics"].setdefault(_k, _v)
         for section in entry["sections"]:
             if section not in out["tags"]:
                 out["tags"].append(section)
