@@ -45,7 +45,9 @@ PAGES = [
 
 HEADERS = {
     # 表明身份、不伪装成浏览器用户，频率压到每天 2 次。
-    "User-Agent": "xbangdan-tags-bot/1.0 (daily榜单同步; low-frequency)",
+    # 注意：HTTP 请求头必须是纯 ASCII，requests 会按 latin-1 编码，
+    # 这里放中文（比如“榜单同步”）会在 Actions 里直接报编码错误导致抓取失败。
+    "User-Agent": "xbangdan-tags-bot/1.0 (daily-sync; low-frequency)",
     "Accept": "text/html,application/xhtml+xml",
     "Accept-Language": "zh-CN,zh;q=0.9",
 }
