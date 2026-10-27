@@ -13,8 +13,10 @@
   - 账号榜涨粉排序 https://xbangdan.com/accounts/?sort=follow&time=t
     前 100 名 -> 今日涨粉（2000 条全贴没有意义，尾巴都是 +6、+7 粉）
   - 黑马筛选页 https://xbangdan.com/accounts/?rising=1
-    按帖均曝光降序翻页，粉丝 < 5000 且帖均 >= 20000 -> 黑马；
-    整页帖均都 < 20000 就停（已按降序排，后面只会更低）
+    网站已经做了判定和筛选：默认就是 5000 粉以下的新锐号，
+    页里出现的号就直接贴黑马，不再自己加一道粉丝/帖均量化兜底重打分。
+    那道兜底是以前只能拿到首页 9 条预览时的权宜之计，
+    现在能翻完整页了，它就是多余的判断，应该删掉。
   - 长文榜 https://xbangdan.com/articles/
     7 天 222 篇全量（12 页），去重后的作者 -> 长文作者
   - 推文榜 https://xbangdan.com/posts/
@@ -58,8 +60,9 @@ ARTICLES_URL = f"{BASE}/articles/"
 POSTS_URL = f"{BASE}/posts/"
 
 FOLLOW_TOP_N = 100
-BLACK_FOLLOWERS_MAX = 5000
-BLACK_AVG_MIN = 20000
+# 注意：FOLLOW_TOP_N 是截断，不是重打分。网站给的是 2000 名的排名，
+# 二值标签总得有个截断点，前 100 名就是这个截断点；
+# 黑马、长文、爆款则不截断，直接取网站整页。
 
 
 def parse_accounts_html(html: str) -> list[dict]:
@@ -324,16 +327,10 @@ def main() -> int:
                     follow_rows.extend(rows)
             except Exception as exc:
                 print(f"[error] 账号榜涨粉抓取失败：{exc}", file=sys.stderr)
-            # 3. 黑马筛选页，按帖均降序，整页帖均 < 20000 即停
-            def rising_stop(rows: list[dict]) -> bool:
-                avgs = [r["metrics"].get("avg_exposure") for r in rows
-                        if r["metrics"].get("avg_exposure") is not None]
-                return bool(avgs) and max(avgs) < BLACK_AVG_MIN
-
+            # 3. 黑马筛选页，39 页全翻，页里出现的号都算黑马，不再二次筛选
             try:
                 pages = collect_pages(page, ACCOUNTS_RISING, parse_accounts_html,
-                                      max_pages=39, stop_fn=rising_stop,
-                                      label="黑马榜")
+                                      max_pages=39, label="黑马榜")
                 for rows in pages:
                     rising_rows.extend(rows)
             except Exception as exc:
@@ -376,18 +373,14 @@ def main() -> int:
         if "今日涨粉" not in out["tags"]:
             out["tags"].append("今日涨粉")
 
-    # 黑马量化规则（不只取预览 9 条）
+    # 黑马：网站黑马页里出现的号直接贴，不再自己设粉丝/帖均门槛
     for row in rising_rows:
-        followers = row["metrics"].get("followers")
-        avg = row["metrics"].get("avg_exposure")
-        if followers is not None and avg is not None \
-                and followers < BLACK_FOLLOWERS_MAX and avg >= BLACK_AVG_MIN:
-            key = row["handle"].lower()
-            out = get_entry(key, row["handle"])
-            for k, v in row["metrics"].items():
-                out["metrics"].setdefault(k, v)
-            if "黑马" not in out["tags"]:
-                out["tags"].append("黑马")
+        key = row["handle"].lower()
+        out = get_entry(key, row["handle"])
+        for k, v in row["metrics"].items():
+            out["metrics"].setdefault(k, v)
+        if "黑马" not in out["tags"]:
+            out["tags"].append("黑马")
 
     # 长文榜作者去重 -> 长文作者
     for row in article_rows:
