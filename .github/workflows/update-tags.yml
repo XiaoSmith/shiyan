@@ -1,0 +1,38 @@
+name: 更新 xbangdan 标签数据
+
+# 每天跑 2 次：UTC 1 点（北京时间 9 点）和 UTC 9 点（北京时间 17 点）。
+# xbangdan 数据本身是早上定格、白天持续刷新，这个频率足够，不需要实时抓。
+on:
+  schedule:
+    - cron: '0 1 * * *'
+    - cron: '0 9 * * *'
+  workflow_dispatch: # 网页上手动点一下也能立即跑一次
+
+permissions:
+  contents: write # 需要把新生成的 tags.json 推回仓库
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装依赖
+        run: pip install requests beautifulsoup4
+
+      - name: 抓取并生成 tags.json
+        # 脚本自带重试和校验：解析失败会直接退出且不覆盖旧文件，
+        # 这样 Actions 失败告警先响，用户端插件仍用上一份缓存，不会突然全空白。
+        run: python scripts/fetch_xbangdan.py --out tags.json
+
+      - name: 有变化才提交
+        run: |
+          git config user.name "tags-bot"
+          git config user.email "tags-bot@users.noreply.github.com"
+          git add tags.json
+          git diff --cached --quiet || git commit -m "chore: 更新 xbangdan 标签数据"
+          git push
