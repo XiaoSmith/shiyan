@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T16:00:28.277545+00:00",
+  "updated_at": "2026-11-16T07:37:29.049104+00:00",
   "source": "xbangdan.com",
   "source_pages": [
     "https://xbangdan.com/posts/",
@@ -14,884 +14,287 @@
       ],
       "metrics": {}
     },
-    "xie_dl": {
-      "handle": "xie_dl",
-      "display_name": "谢小总 +1531 粉",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 605000.0,
-        "likes": 8911.0
-      }
-    },
-    "oooodjdjd": {
-      "handle": "oooodjdjd",
-      "display_name": "为什么说瑞士银行是世界上最安全的银行？  富豪走进一家银行，问柜员“我想存款10… @oooodjd",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 206000.0,
-        "likes": 1129.0
-      }
-    },
-    "gaooofy": {
-      "handle": "gaooofy",
-      "display_name": "马斯克竟然亲自爬上回收架，近距离查看星舰！🚀🤯  这次老马也按捺不住激动，直接跑… @gaooofy",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 53000.0,
-        "likes": 3092.0
-      }
-    },
-    "igeekbb": {
-      "handle": "igeekbb",
-      "display_name": "真是太惨了，这位叫大掌柜的网友，发现了一个长指甲离婚定律，就是你在抖音搜索离婚证… @igeekbb",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 40000.0,
-        "likes": 2335.0
-      }
-    },
-    "chakmillion": {
-      "handle": "chakmillion",
-      "display_name": "涨粉 4970 粉 查百万",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 34000.0,
-        "likes": 333.0
-      }
-    },
-    "othersidebj": {
-      "handle": "OtherSideBJ",
-      "display_name": "当年特斯拉快破产的时候，马斯克想把公司卖给苹果，结果库克连面都不肯见。  几年后… @OtherSi",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 32000.0,
-        "likes": 168.0
-      }
-    },
-    "fred834567": {
-      "handle": "Fred834567",
-      "display_name": "外网最近很火的一个学习方法：MIT 学霸用 AI，在48小时内快速吃透一门陌生学… @Fred834",
-      "tags": [
-        "今日爆款",
-        "AI"
-      ],
-      "metrics": {
-        "exposure": 26000.0,
-        "likes": 3399.0
-      }
-    },
-    "sizhe_bitcat": {
-      "handle": "sizhe_bitcat",
-      "display_name": "遇上这种邻居只能说倒了八辈子血霉！ https://t.co/nINyw9Loc… @sizhe_b",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 24000.0,
-        "likes": 260.0
-      }
-    },
-    "tggjh14779": {
-      "handle": "tggjh14779",
-      "display_name": "盘点那些惨烈的车祸现场  #老K爱交朋友 https://t.co/1ZpBMA… @tggjh14",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 23000.0,
-        "likes": 602.0
-      }
-    },
-    "npc888666": {
-      "handle": "NPC888666",
-      "display_name": "打网球的姑娘 普遍身材都很好 @NPC888666 看过 2.1万 曝光/时",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 21000.0,
-        "likes": 1260.0
-      }
-    },
-    "didengshengwu": {
-      "handle": "didengshengwu",
-      "display_name": "张颂文成名前的艰难  张颂文早年做过工人、服务员，当过收入不错的导游，24岁毅然… @didengs",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 18000.0,
-        "likes": 51.0
-      }
-    },
-    "thankucrypto": {
-      "handle": "thankucrypto",
-      "display_name": "allincrypto 熬鹰资本 🇨🇳 +2502 粉",
-      "tags": [
-        "今日爆款",
-        "加密"
-      ],
-      "metrics": {
-        "exposure": 17000.0,
-        "likes": 276.0,
-        "posts": 8.0
-      }
-    },
-    "yuren477": {
-      "handle": "yuren477",
-      "display_name": "yuren477",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 17000.0,
-        "likes": 393.0,
-        "posts": 4.0
-      }
-    },
-    "nangongyuan": {
-      "handle": "nangongyuan",
-      "display_name": "前半截:残忍的中国人 后半截：真香 https://t.co/auqRexbvp… @nangong",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 15000.0,
-        "likes": 451.0
-      }
-    },
-    "_forab": {
-      "handle": "_FORAB",
-      "display_name": "AB Kuai.Dong 331.3万 /天",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 15000.0,
-        "likes": 271.0
-      }
-    },
-    "iiiinvest": {
-      "handle": "iiiinvest",
-      "display_name": "涨粉 首次夺冠 7738 粉 电鱼哥",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 15000.0,
-        "likes": 1205.0
-      }
-    },
-    "jiajia_okx": {
-      "handle": "Jiajia_OKX",
-      "display_name": "为什么说双币赢是个很聪明的产品？  想要抄底 BTC ？ 大家心里多少都有个理想价格吧？ 比如你觉得",
-      "tags": [
-        "今日爆款",
-        "加密"
-      ],
-      "metrics": {
-        "exposure": 14000.0,
-        "likes": 42.0
-      }
-    },
-    "beijilmoo": {
-      "handle": "beijilmoo",
-      "display_name": "被中国打成白菜价的外国垄断产品：  一，心脏支架：  原 20 万，现 700 多。  二，人工角膜",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 13000.0,
-        "likes": 752.0
-      }
-    },
-    "dragonhau66": {
-      "handle": "Dragonhau66",
-      "display_name": "🤷‍♀️段永平对黄仁勋回归这件事，给出了极其冷酷但又极其专业的判断。  有网友在雪球问他：10万+的",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 12000.0,
-        "likes": 42.0
-      }
-    },
-    "caiziboshi": {
-      "handle": "caiziboshi",
-      "display_name": "孙哥最终可能就败在跟曾颖太早分手，虽然拿到了大结果，但没有获得这个认知，还在美国混！美国主流社会早晚",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 11000.0,
-        "likes": 2.0
-      }
-    },
-    "suoha_ai": {
-      "handle": "suoha_ai",
-      "display_name": "这个老哥是早期 $BNB 的前几大户，资产通天了  据说拥有几百万个 $BNB 这么多年没卖过，那句",
-      "tags": [
-        "今日爆款",
-        "加密"
-      ],
-      "metrics": {
-        "exposure": 11000.0,
-        "likes": 117.0
-      }
-    },
-    "sxc2587": {
-      "handle": "sxc2587",
-      "display_name": "艹他妈的！！！  日本AV居然有导演拍到一半忍不住，直接亲自上阵的片子？！  @grok 快把番号找",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 10000.0,
-        "likes": 21.0
-      }
-    },
-    "wanerime": {
-      "handle": "wanerime",
-      "display_name": "rain 111 帖",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 10000.0,
-        "likes": 515.0,
-        "posts": 111.0
-      }
-    },
-    "cuimao": {
-      "handle": "cuimao",
-      "display_name": "原来08年汶川地震，北京市海淀外国语实验学校接收了 101 名灾区学生。黄仁勋特… @cuimao ",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 9814.0,
-        "likes": 647.0
-      }
-    },
-    "bailikoi": {
-      "handle": "BailiKoi",
-      "display_name": "白栎Shirly +1419 粉/天",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 9631.0,
-        "likes": 2479.0
-      }
-    },
-    "10086110x": {
-      "handle": "10086110x",
-      "display_name": "sero（浇朋友版 895.4万",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 8526.0,
-        "likes": 36.0,
-        "posts": 16.0
-      }
-    },
-    "_luckyj888": {
-      "handle": "_luckyj888",
-      "display_name": "卧槽，黄果短剧突然开源了，开源的是被逼走的码农。   这哥们写了黄果大量核心代码，方案转头被领导塞给",
-      "tags": [
-        "今日爆款",
-        "科技"
-      ],
-      "metrics": {
-        "exposure": 8401.0,
-        "likes": 187.0
-      }
-    },
-    "lmx2000": {
-      "handle": "lmx2000",
-      "display_name": "黄仁勋再次大地震 https://t.co/5UEVbiHfpb lmx2000 · 113 赞 看",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 8386.0,
-        "likes": 113.0
-      }
-    },
-    "zhang_memecoin": {
-      "handle": "ZhanG_MemeCoin",
-      "display_name": "🏆 BLG 夺冠了！！！🔥  恭喜 BLG 拿下 2026《英雄联盟》全球总决赛冠军，成功捧起召唤师",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 8237.0,
-        "likes": 12.0
-      }
-    },
-    "sunyunran": {
-      "handle": "sunyunran",
-      "display_name": "sunyunran",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 21848000.0,
-        "likes": 60772.0,
-        "posts": 5.0
-      }
-    },
-    "smudge_smg": {
-      "handle": "smudge_smg",
-      "display_name": "smudge_smg",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 6477000.0,
-        "likes": 6023.0,
-        "posts": 31.0,
-        "comments": 15.0
-      }
-    },
-    "arixzone": {
-      "handle": "arixzone",
-      "display_name": "广东韶关丹霞山的悬崖古道，1000多年前就已开凿。最早是僧人避世苦修，把住处选在… @arixzon",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 1687000.0,
-        "likes": 3961.0
-      }
-    },
-    "xanderwow_a": {
-      "handle": "Xanderwow_A",
-      "display_name": "“真正的好兄弟，会在落难时为你遮风挡雨” @Xanderwow_A 看过 128.6万 曝光",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 1286000.0,
-        "likes": 11986.0
-      }
-    },
-    "kazegogogo": {
-      "handle": "kazegogogo",
-      "display_name": "BLG 对 Gen.G 的决赛开打前，分享一个 Knight 的小故事。  Kn… @kazegog",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 1117000.0,
-        "likes": 17485.0
-      }
-    },
-    "minlibuilds": {
-      "handle": "minlibuilds",
-      "display_name": "😭 这就是马斯克。老黄被赶下台 48 小时，世界首富亲自下场，试图为他挡了所有的… @minlibu",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 733000.0,
-        "likes": 6255.0,
-        "bookmarks": 1313.0
-      }
-    },
-    "zhangmanman555": {
-      "handle": "zhangmanman555",
-      "display_name": "“这才是真正的扮猪吃老虎😂” @zhangmanman555 看过 68.1万 曝光",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 681000.0,
-        "likes": 497.0
-      }
-    },
-    "kongkongda5588": {
-      "handle": "kongkongda5588",
-      "display_name": "普京现在的后勤命门，全靠中国零食撑着。16 块一包的麻辣鸭腿，在乌东前线能换来士… @kongkon",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 514000.0,
-        "likes": 1903.0
-      }
-    },
-    "hackdeacon": {
-      "handle": "hackdeacon",
-      "display_name": "世界第一翻译，@Wendy5544 夏安姐姐，被这段三语翻译吓哭了😭，英语中文韩… @hackdea",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 348000.0,
-        "likes": 6101.0,
-        "bookmarks": 2215.0
-      }
-    },
-    "youyuy88": {
-      "handle": "youyuy88",
-      "display_name": "听起来真的很阴阳😊 https://t.co/YBTNpaANyS @youyuy88 看过 32.",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 325000.0,
-        "likes": 1105.0
-      }
-    },
-    "appraiser008": {
-      "handle": "Appraiser008",
-      "display_name": "太神奇！中国某车居然内置了“车震模式”！😂 https://t.co/8mkFz… @Apprais",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 295000.0,
-        "likes": 639.0
-      }
-    },
-    "hhp121222": {
-      "handle": "hhp121222",
-      "display_name": "寂寞的乔丹 116 帖",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 253000.0,
-        "likes": 3715.0,
-        "posts": 116.0
-      }
-    },
-    "mubeitech": {
-      "handle": "mubeitech",
-      "display_name": "曝光 首次夺冠 528.3 万 墓碑科技",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 252000.0,
-        "likes": 3941.0
-      }
-    },
-    "jianjia97758868": {
-      "handle": "jianjia97758868",
-      "display_name": "有卧龙的地方必须有凤雏🤣 蒹葭（互fo🇨🇳必回💞） · 578 赞 看过 22.2万 曝光",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 222000.0,
-        "likes": 578.0
-      }
-    },
-    "zhangjun027": {
-      "handle": "zhangjun027",
-      "display_name": "评论 1237 条 买家张俊",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 189000.0,
-        "likes": 256.0,
-        "posts": 176.0
-      }
-    },
-    "yinlrr": {
-      "handle": "yinlrr",
-      "display_name": "你要知道，闲鱼上所有的所谓浙大清北程序员演唱会抢票，他们的程序都来自github，而这些是完全免费的",
-      "tags": [
-        "今日爆款",
-        "科技"
-      ],
-      "metrics": {
-        "exposure": 179000.0,
-        "likes": 1932.0
-      }
-    },
-    "jimmyyy0066": {
-      "handle": "jimmyyy0066",
-      "display_name": "小姨子这是什么意思啊 https://t.co/b5Q4FK8rh9 吉米JIMMY · 681 赞",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 178000.0,
-        "likes": 681.0
-      }
-    },
-    "xiaohu": {
-      "handle": "xiaohu",
-      "display_name": "我去  本次星舰发射里面有个 Optimus 机器人  这个 Optimus 机器人，跟随星舰一通升",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 173000.0,
-        "likes": 1956.0
-      }
-    },
-    "alanchen": {
-      "handle": "alanchen",
-      "display_name": "成功了！成功了！成功了！  星舰成功接住！历史时刻！！  太尼玛牛逼了！！ https://t.co",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 172000.0,
-        "likes": 2185.0
-      }
-    },
-    "ox_azu": {
-      "handle": "Ox_Azu",
-      "display_name": "玩归玩闹归闹，同学聚会不拍照  你看大姐看同学的眼神都拉丝了！  这些好了，被正房给逮住了！🤣🤣🤣 ",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 164000.0,
-        "likes": 330.0
-      }
-    },
-    "mikiee_20": {
-      "handle": "Mikiee_20",
-      "display_name": "Miki +3730 粉",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 162000.0,
-        "likes": 6385.0
-      }
-    },
-    "__soragoto__": {
-      "handle": "__soragoto__",
-      "display_name": "如果你恨一个人  你就去偷偷潜入他的服务器然后执行  chmod 666 /bin/chmod  如",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 154000.0,
-        "likes": 1522.0
-      }
-    },
-    "cryptoapprenti1": {
-      "handle": "cryptoapprenti1",
-      "display_name": "Tom Lee 亲自示范什么叫长期主义： 投进去 201 亿美金，现在剩 115 亿，浮亏 86 亿",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 147000.0,
-        "likes": 826.0
-      }
-    },
-    "ryrenz": {
-      "handle": "Ryrenz",
-      "display_name": "📊 耶鲁计算机博士生刘晨把自己发 Nature 子刊和 NeurIPS 的论文配图脚本全开源了，fi",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 136000.0,
-        "likes": 1942.0
-      }
-    },
-    "laomunova": {
-      "handle": "laomunova",
-      "display_name": "黄仁勋核心管理层基本都是金发女郎，难怪年初采访时说：  “我身边围绕着一群非常优秀的女性，她们都很厉",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 127000.0,
-        "likes": 395.0
-      }
-    },
-    "interestxy": {
-      "handle": "interestxy",
-      "display_name": "克制你的动物欲望，譬如性欲、食欲、报复欲、炫耀欲、攀比欲。  去追求人类的光辉，爱、健康、宽恕、创造",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 125000.0,
-        "likes": 8607.0
-      }
-    },
-    "giantcutie666": {
-      "handle": "giantcutie666",
-      "display_name": "早在2006年比特币出现之前，NVIDIA内部就开始研究用英伟GPU执行密码学任务  后来老黄意识到",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 121000.0,
-        "likes": 339.0
-      }
-    },
-    "menghuanlangqi2": {
-      "handle": "Menghuanlangqi2",
-      "display_name": "我终于过上了无人打扰的生活，我感到真的很幸运，为了这个目标我努力了很多年。           我3",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 100000.0,
-        "likes": 1234.0
-      }
-    },
-    "vicentyip": {
-      "handle": "vicentyip",
-      "display_name": "1978年，号称铁姑娘的郭凤莲，跟着代表团一起前往美国，她在美国到处宣传“大寨精神”，如何吃苦！可美",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 96000.0,
-        "likes": 194.0
-      }
-    },
-    "ai_xiaomu": {
-      "handle": "ai_xiaomu",
-      "display_name": "至少几十个人问过我这个幼儿园 ai 方案是怎么做的了，有些是感兴趣，有些是想拿去变现，毕竟是真刚需。",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 96000.0,
-        "likes": 68.0,
-        "bookmarks": 1151.0
-      }
-    },
-    "salmonbro": {
-      "handle": "Salmonbro",
-      "display_name": "他们说最近三天内可能会发生的事：  1、全球停电，电力和互联网同时消失 2、各大银行把账户余额直接清",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 95000.0,
-        "likes": 440.0
-      }
-    },
-    "btc__sunny": {
-      "handle": "BTC__Sunny",
-      "display_name": "你们快看看，这些地址不计成本抛售比特币  他们究竟知道了什么？ https://t.co/iOVln",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 95000.0,
-        "likes": 292.0
-      }
-    },
-    "asiafinance": {
-      "handle": "asiafinance",
-      "display_name": "重磅：推动黄仁勋下台的，是卢比奥？华盛顿邮报披露，泄密给纽约时报的所谓出轨和间谍重锤，正是白宫里的卢",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 93000.0,
-        "likes": 355.0
-      }
-    },
-    "davinci_seven": {
-      "handle": "davinci_seven",
-      "display_name": "据说日本不能随便开除员工，于是发明了 “闲置房间”，想把员工逼到闲的受不了自己走，这算福利了吧 ht",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 92000.0,
-        "likes": 257.0
-      }
-    },
-    "ayi_ainotes": {
-      "handle": "AYi_AInotes",
-      "display_name": "大家知道做表情包到底有多赚钱吗？闲鱼上一个普通的微信动态表情定制商品，券后 85 块一套，单店已售 ",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 90000.0,
-        "likes": 720.0,
-        "bookmarks": 2484.0
-      }
-    },
-    "xsser_w": {
-      "handle": "xsser_w",
-      "display_name": "这个越狱方法我用了很久  也就这个sb给说出来了 xsser · 776 赞 看过 8.8万 曝光",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 88000.0,
-        "likes": 776.0
-      }
-    },
-    "sxcfxj1": {
-      "handle": "sxcfxj1",
-      "display_name": "我设计oc技能： 水元素一坨雷霆大水球砸下去 火元素一坨雷霆大火球砸下去 土元素一坨雷霆大石块砸下去",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 86000.0,
-        "likes": 1663.0
-      }
-    },
-    "wangnextdoor2": {
-      "handle": "WangNextDoor2",
-      "display_name": "近日Lisa在拉斯维加斯凯撒宫的斗兽场剧场表演，热辣的一P，引起了巨大的讨论热度，不知道的还以为又是",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 81000.0,
-        "likes": 135.0
-      }
-    },
-    "limio67637193": {
-      "handle": "limio67637193",
-      "display_name": "¡Buenos días, amigos de México! 🇲🇽👋  Soy de China ",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 78000.0,
-        "likes": 918.0
-      }
-    },
-    "0xmaxs": {
-      "handle": "0xmaxs",
-      "display_name": "6 九江月.hl 2664 粉丝 13.7万 曝光",
+    "bigjusir": {
+      "handle": "bigjusir",
+      "display_name": "军嫂的瓜是真的多啊，简直太逆天了！  开个小号给自己要当兵的男朋友打码，转手就投… @bigjusi",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
         "exposure": 74000.0,
-        "likes": 219.0,
-        "followers": 2664.0
+        "likes": 249.0
       }
     },
-    "laoyan86": {
-      "handle": "laoyan86",
-      "display_name": "经济环境不好千万不要刁难外卖员，很多无敌之人也在送外卖，尤其那些事B小仙女，小心点吧... http",
+    "chakmillion": {
+      "handle": "chakmillion",
+      "display_name": "查百万 +631 粉",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 70000.0,
-        "likes": 392.0
+        "exposure": 43000.0,
+        "likes": 934.0
       }
     },
-    "ocean_yu1": {
-      "handle": "Ocean_Yu1",
-      "display_name": "质疑祖宗，理解祖宗，成为祖宗。 https://t.co/mqj9TnCHrK X富厂长 · 123",
+    "cyberkanjousen": {
+      "handle": "CyberKanjousen",
+      "display_name": "我认为 DeepSeek 根本不应该在小红书上开设官方账号： https://t… @CyberKa",
+      "tags": [
+        "今日爆款",
+        "搞钱"
+      ],
+      "metrics": {
+        "exposure": 40000.0,
+        "likes": 644.0
+      }
+    },
+    "kitesrox": {
+      "handle": "kitesrox",
+      "display_name": "懂球帝依旧迅速  经过姆巴佩一战  这次应对亚马尔明显更熟练了🤣 https:/… @kitesro",
+      "tags": [
+        "今日爆款",
+        "时事",
+        "黑马"
+      ],
+      "metrics": {
+        "exposure": 36000.0,
+        "likes": 427.0,
+        "avg_exposure": 24000.0,
+        "followers": 4055.0
+      }
+    },
+    "wh1teho1e": {
+      "handle": "wh1teho1e",
+      "display_name": "嘿@grok ，  我这个马斯克钥匙扣怎么样？  要不要换姿势？ https:/… @wh1teho",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 69000.0,
-        "likes": 123.0
+        "exposure": 28000.0,
+        "likes": 40.0
       }
     },
-    "paulxue1979": {
-      "handle": "paulxue1979",
-      "display_name": "9 Paul Xue | BTC 链上数据研究 4162 粉丝 10.9万 曝光",
+    "_forab": {
+      "handle": "_FORAB",
+      "display_name": "继上周马化腾演讲流出后，腾讯总裁办上午向内部发文，再次指出公司正面临危机感。  … @_FORAB ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 25000.0,
+        "likes": 98.0
+      }
+    },
+    "tggjh14779": {
+      "handle": "tggjh14779",
+      "display_name": "盘点那些恐怖的车祸现场  #老K爱交朋友 https://t.co/LMEE6r… @tggjh14",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 24000.0,
+        "likes": 240.0
+      }
+    },
+    "allen5951": {
+      "handle": "allen5951",
+      "display_name": "黄仁勋正在考虑重返英伟达担任CEO？   @grok 这是真的吗？ @allen5951 看过 2.",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 24000.0,
+        "likes": 42.0
+      }
+    },
+    "thankucrypto": {
+      "handle": "thankucrypto",
+      "display_name": "allincrypto 熬鹰资本 🇨🇳 +3197 粉",
       "tags": [
         "今日爆款",
         "加密"
       ],
       "metrics": {
-        "exposure": 69000.0,
-        "likes": 79.0,
-        "followers": 4162.0
+        "exposure": 20000.0,
+        "likes": 307.0,
+        "posts": 8.0
       }
     },
-    "hinlmo141388": {
-      "handle": "hinlmo141388",
-      "display_name": "Chời ơi!!! Phụ nữ có phải ai cũng thích xem cơ bụn",
+    "xicilion": {
+      "handle": "xicilion",
+      "display_name": "说一下骤停的感受。  没有阿飘，没有天花板的光芒，没有从外面看到自己。什么都没有… @xicilio",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 67000.0,
-        "likes": 98.0
+        "exposure": 19000.0,
+        "likes": 437.0
       }
     },
-    "10uzhans": {
-      "handle": "10uzhans",
-      "display_name": "开会开会。。  大早上的神清气爽。。。 未来kebi · 285 赞 看过 6.4万 曝光",
+    "bbkirstry": {
+      "handle": "bbkirstry",
+      "display_name": "感谢大家的认真提问！ 我在评论区精心挑选了15道题作答 本期是一期Q&A大放送！… @bbkirst",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 64000.0,
-        "likes": 285.0
+        "exposure": 19000.0,
+        "likes": 21.0
       }
     },
-    "qinbafrank": {
-      "handle": "qinbafrank",
-      "display_name": "1、鲁比奥最早给川普递交备忘录应该没有要让老黄下去，但是要让老黄闭嘴和听话，是要他严格遵守芯片出口管",
+    "youy1qwq": {
+      "handle": "youy1qwq",
+      "display_name": "原来要夺冠才能有大会员啊，我还以为是LV4会员每年将免费获得3个月的大会员，LV… @youy1qw",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 64000.0,
-        "likes": 212.0
+        "exposure": 16000.0,
+        "likes": 791.0
       }
     },
-    "zangling8386": {
-      "handle": "Zangling8386",
-      "display_name": "跑步有助于全面提升我们的身体健康 🏃‍♀️💪 https://t.co/xzcohJzf6R Zan",
+    "eastjiangbai": {
+      "handle": "eastjiangbai",
+      "display_name": "我就喜欢看NBA，这两个女的太讨厌了，虽然长的漂亮，热情似火，但出现在镜头中，耽… @eastjia",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 62000.0,
-        "likes": 5474.0
+        "exposure": 16000.0,
+        "likes": 226.0
       }
     },
-    "dotey": {
-      "handle": "dotey",
-      "display_name": "Lauren Tan 在 AI Engineer 大会上的演讲《All Code Is Slop (",
+    "supereasyit": {
+      "handle": "supereasyit",
+      "display_name": "笑了, 哈哈哈 https://t.co/hQnu1XVHmP @supereasyit 看过 1.",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 62000.0,
-        "likes": 663.0
+        "exposure": 15000.0,
+        "likes": 274.0
       }
     },
-    "cnfinancewatch": {
-      "handle": "cnfinancewatch",
-      "display_name": "伐木的确是技术活  怪不得伐木工工资高 https://t.co/sZTt8DcNbc 华尔街观察 ",
+    "insight_alchemy": {
+      "handle": "insight_alchemy",
+      "display_name": "The fluffy kitty is giving the little pu… @insight",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 61000.0,
-        "likes": 29.0
+        "exposure": 14000.0,
+        "likes": 13.0
+      }
+    },
+    "shenxiao123971": {
+      "handle": "Shenxiao123971",
+      "display_name": "家里要是有人查出了癌症，千万别硬扛着自己掏钱治！去政务大厅把下面这三件事办了，家… @Shenxia",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 13000.0,
+        "likes": 964.0
+      }
+    },
+    "realnyarime": {
+      "handle": "realNyarime",
+      "display_name": "女儿的宝马x5开不进去，所以才拆的围墙 https://t.co/ja2jpO8… @realNya",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 12000.0,
+        "likes": 191.0
+      }
+    },
+    "bxiaokang": {
+      "handle": "bxiaokang",
+      "display_name": "嘿 @grok ，图片中这个牌子的鞋是马斯克经常穿的吗？鞋子是什么牌子，多少钱？ https://t",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 12000.0,
+        "likes": 36.0
+      }
+    },
+    "alanchen": {
+      "handle": "alanchen",
+      "display_name": "马斯克这边，星舰刚被发射塔“筷子”从轨道上稳稳夹回来。  ULA那边，火神火箭升空10分钟直接炸了，",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 11000.0,
+        "likes": 195.0
+      }
+    },
+    "2091996981snow": {
+      "handle": "2091996981snow",
+      "display_name": "身体是意识的载体，我能做到心如止水彻底躺平，很大部分原因源自患有先天性罕见疾病。  我从出生到21岁",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 9948.0,
+        "likes": 78.0
+      }
+    },
+    "zen_with_ai": {
+      "handle": "Zen_with_AI",
+      "display_name": "我20岁离开中国 现在快40。 再过一年 我在美国的时间就超过在中国生活的时间了。 我这种人， 现在",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 9883.0,
+        "likes": 320.0
+      }
+    },
+    "igeekbb": {
+      "handle": "igeekbb",
+      "display_name": "现在大家都是这样利用空闲车位的吗，不是规定不能改变车位使用性质吗。  哦，原来是在集装箱装上了车轮，",
+      "tags": [
+        "今日爆款",
+        "AI"
+      ],
+      "metrics": {
+        "exposure": 9197.0,
+        "likes": 22.0
+      }
+    },
+    "fxtrader": {
+      "handle": "fxtrader",
+      "display_name": "#全文 腾讯公开2026总办LinkTime现场笔记，号召AI时代再创业，“心态归零”。 1、上船应",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 8748.0,
+        "likes": 78.0
+      }
+    },
+    "yudian_zero": {
+      "handle": "Yudian_Zero",
+      "display_name": "看完这个故事彻底陷入沉默了，搁谁坐在这个位置上都不知道该骂谁…… https://t.co/x7XH",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 8037.0,
+        "likes": 12.0
+      }
+    },
+    "kingluffywang": {
+      "handle": "kingluffywang",
+      "display_name": "后面华尔街会炒作老黄王者归来故事，把NVDA pump上去，然后回归不及预期，股票大跌，让机构们先走",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 7811.0,
+        "likes": 315.0
       }
     },
     "zuichunyan123": {
@@ -901,346 +304,966 @@
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 60000.0,
-        "likes": 158.0
+        "exposure": 7329.0,
+        "likes": 22.0
       }
     },
-    "dav338876": {
-      "handle": "Dav338876",
-      "display_name": "这就是外国前端的技术水平..😱  我们还在卷 html CSS JavaScript  人家早就开始",
+    "zengying1107": {
+      "handle": "zengying1107",
+      "display_name": "不要做合约，做合约就是在赌未来的市场。这和你走到赌场，一时兴起赌一把没有任何区别。 但合约更可怕的，",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 60000.0,
-        "likes": 1030.0
+        "exposure": 7106.0,
+        "likes": 340.0
       }
     },
-    "yff5188": {
-      "handle": "yff5188",
-      "display_name": "这次连环爆仓，直接把多军给干沉默了。📉  这个老头都扛不住，30天亏了近9000万U（折合差不多7个",
+    "lixinbao_x": {
+      "handle": "lixinbao_X",
+      "display_name": "Simbao 92 帖/天",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 60000.0,
-        "likes": 174.0
+        "exposure": 6862.0,
+        "likes": 9.0,
+        "posts": 92.0
       }
     },
-    "borejuexing888": {
-      "handle": "borejuexing888",
-      "display_name": "下周美股走势预测： 周一： 纳指继续暴跌3%，市场一片哀嚎，所有人都觉得牛市结束了。 周二： 市场横",
+    "leo114119": {
+      "handle": "leo114119",
+      "display_name": "Qwen 4 Max 居然和 Qwen 3.8 max 一样是 2.4 万亿的参数，这是。。。。训练",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 59000.0,
-        "likes": 191.0
+        "exposure": 6788.0,
+        "likes": 58.0
       }
     },
-    "sunyuchentron": {
-      "handle": "sunyuchentron",
-      "display_name": "涨粉 2387 粉 孙宇晨（去过太空版）🧑‍🚀",
+    "sleepy0x13": {
+      "handle": "sleepy0x13",
+      "display_name": "董事会还在考虑让不让黄仁勋回来，硅谷已经有人开始研究怎么罢免董事会了。  Balaji 提出，只要黄",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 58000.0,
-        "likes": 199.0
+        "exposure": 5942.0,
+        "likes": 173.0
       }
     },
-    "feiyanxie": {
-      "handle": "FeiyanXie",
-      "display_name": "曝光 1262.3 万 Feiyan Xie",
+    "yuren477": {
+      "handle": "yuren477",
+      "display_name": "余人sama +1124 粉",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 57000.0,
-        "likes": 47.0
+        "exposure": 5936.0,
+        "likes": 88.0,
+        "posts": 5.0
       }
     },
-    "bboczeng": {
-      "handle": "bboczeng",
-      "display_name": "发帖 59 帖 勃勃OC",
+    "xiaomustock": {
+      "handle": "xiaomustock",
+      "display_name": "美股打算再忍俩三天，美国时间19号anthropic上市。 这几天不可能太平， 英伟达财报， ant",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 54000.0,
-        "likes": 436.0,
-        "posts": 59.0
+        "exposure": 5640.0,
+        "likes": 57.0
       }
     },
-    "dliphotos": {
-      "handle": "dliphotos",
-      "display_name": "大家一定要知道的黄金6小时！  当战争或大规模长期停电, 电网崩溃供应链断裂时，请记住，现代社会的法",
+    "bljping1": {
+      "handle": "bljping1",
+      "display_name": "深夜提灯人 239.2万",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 54000.0,
-        "likes": 191.0
+        "exposure": 17837000.0,
+        "likes": 6765.0
       }
     },
-    "jiangzhuoer2": {
-      "handle": "jiangzhuoer2",
-      "display_name": "感觉没大跌风险了，这个对冲空单损80点平掉 江卓尔_莱比特矿池 · 68 赞 看过 5.3万 曝光",
+    "othersidebj": {
+      "handle": "OtherSideBJ",
+      "display_name": "当年特斯拉快破产的时候，马斯克想把公司卖给苹果，结果库克连面都不肯见。  几年后… @OtherSi",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 53000.0,
+        "exposure": 1256000.0,
+        "likes": 4079.0
+      }
+    },
+    "yesterdaysut": {
+      "handle": "Yesterdaysut",
+      "display_name": "日本人にちょっと聞きたい。  中国のことは好きでも嫌いでもいい。  でも正直、「… @Yesterd",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 1203000.0,
+        "likes": 1869.0
+      }
+    },
+    "eazymoney888": {
+      "handle": "eazymoney888",
+      "display_name": "身家万亿的老板，正趴在一百米高空，摸一艘刚从太空掉下来的“废铁”。  评论区都在… @eazymon",
+      "tags": [
+        "今日爆款",
+        "搞钱"
+      ],
+      "metrics": {
+        "exposure": 1180000.0,
+        "likes": 10097.0
+      }
+    },
+    "zhngkn414984690": {
+      "handle": "zhngkn414984690",
+      "display_name": "大佬们，你们都转战到哪个平台了？我真的不想在X上吃屎了 @zhngkn414984690 看过 92",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 923000.0,
+        "likes": 707.0
+      }
+    },
+    "mubeitech": {
+      "handle": "mubeitech",
+      "display_name": "曝光 首次夺冠 528.3 万 墓碑科技",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 849000.0,
+        "likes": 8096.0
+      }
+    },
+    "xinrui0214": {
+      "handle": "xinrui0214",
+      "display_name": "日本14岁花季少女Ruka  在TikTok上直播时失去平衡，不幸坠亡、  令人… @xinrui0",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 835000.0,
+        "likes": 1464.0
+      }
+    },
+    "yinlrr": {
+      "handle": "yinlrr",
+      "display_name": "统一回复一下认为高考是最公平的考试的人：  好的学校连高考会出什么题都知道。  … @yinlrr ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 790000.0,
+        "likes": 1886.0
+      }
+    },
+    "johnsonlay70702": {
+      "handle": "JohnsonLay70702",
+      "display_name": "你的身体需要的资源 https://t.co/xDjlAWywWn @JohnsonLay70702",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 707000.0,
+        "likes": 7302.0
+      }
+    },
+    "zaihexx": {
+      "handle": "zaihexx",
+      "display_name": "大半夜办丧事灯也不开吓死我了 https://t.co/QdC9n2v20q @zaihexx 看过",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 514000.0,
+        "likes": 2782.0
+      }
+    },
+    "yuan8028": {
+      "handle": "Yuan8028",
+      "display_name": "黄仁勋辞职后在2.5亿豪宅 和亲友吃炸鸡  外卖点的是四人份的普通连锁炸鸡薯条 … @Yuan802",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 462000.0,
+        "likes": 3926.0
+      }
+    },
+    "hgda777": {
+      "handle": "HGDA777",
+      "display_name": "涨粉 首次夺冠 3079 粉 吉祥富",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 363000.0,
+        "likes": 687.0
+      }
+    },
+    "kylewmi": {
+      "handle": "kylewmi",
+      "display_name": "土豆姐 (@poteto) Lauren Tan 2015—2026 历年颜值造… @kylewmi",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 354000.0,
+        "likes": 2115.0
+      }
+    },
+    "didengshengwu": {
+      "handle": "didengshengwu",
+      "display_name": "张颂文成名前的艰难  张颂文早年做过工人、服务员，当过收入不错的导游，24岁毅然… @didengs",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 312000.0,
+        "likes": 185.0
+      }
+    },
+    "lmx2000": {
+      "handle": "lmx2000",
+      "display_name": "埃隆·马斯克现在对安保的重视程度可谓今非昔比。  早年他出门只带两个保镖，可现在… @lmx2000",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 306000.0,
+        "likes": 5764.0
+      }
+    },
+    "youngstockuser": {
+      "handle": "youngstockuser",
+      "display_name": "费半从高点跌了三成，标普却离高点不到4%，这种局面1995年以来只出现过5次，现在是第6次。  前5",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 281000.0,
+        "likes": 1044.0
+      }
+    },
+    "o88oio": {
+      "handle": "o88oio",
+      "display_name": "直播间观众都说卖内裤的主播小哥长得日本演员宏翔，说的他都害羞了🫣 南知意 · 4310 赞 看过 2",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 275000.0,
+        "likes": 4310.0
+      }
+    },
+    "showy005": {
+      "handle": "showy005",
+      "display_name": "George Wang的自我介绍  很多人搞不清楚，我到底是 KOL还是项目方。  其实，一个人本来",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 256000.0,
+        "likes": 109.0
+      }
+    },
+    "yuyan18300": {
+      "handle": "yuyan18300",
+      "display_name": "父母对孩子的托举  金钱VS知识 https://t.co/rau96Z9j0A 舒服 · 471 ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 248000.0,
+        "likes": 471.0
+      }
+    },
+    "hhp121222": {
+      "handle": "hhp121222",
+      "display_name": "寂寞的乔丹 53 帖",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 241000.0,
+        "likes": 4315.0,
+        "posts": 53.0
+      }
+    },
+    "souro0721": {
+      "handle": "souro0721",
+      "display_name": "曝光 首次夺冠 893.9 万 Souro",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 238000.0,
+        "likes": 4131.0
+      }
+    },
+    "can3yu": {
+      "handle": "can3yu",
+      "display_name": "给大哥整不自信了 Deep ⚡木木 · 537 赞 看过 23.2万 曝光",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 232000.0,
+        "likes": 537.0
+      }
+    },
+    "weiyi88890": {
+      "handle": "WeiYi88890",
+      "display_name": "卧槽！！！  找到一款美国0月租手机号！  哪怕你手机不支持eSIM都可以用app收发短信和打电话！",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 223000.0,
+        "likes": 3161.0
+      }
+    },
+    "suu766": {
+      "handle": "Suu766",
+      "display_name": "卧槽？？怪不得前段时间黄果短剧突然被开源，原来还有这种事🤣 Suu · 284 赞 看过 21.1万",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 211000.0,
+        "likes": 284.0
+      }
+    },
+    "daftpunk_888": {
+      "handle": "DaftPunk_888",
+      "display_name": "黄牛劝你加点钱买第一排跟害你一样 https://t.co/6X5uROyf9l Daft Punk",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 203000.0,
+        "likes": 834.0
+      }
+    },
+    "dylanyu88": {
+      "handle": "dylanyu88",
+      "display_name": "你们以为的灰产大佬，都跟缅北四大家族一样：守着园区，养着枪手，最后排队被押回国  实际的灰产大佬，长",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 199000.0,
+        "likes": 457.0
+      }
+    },
+    "zuoyeben": {
+      "handle": "zuoyeben",
+      "display_name": "宝马735Li在中国跌进48万。。。真是一个令人唏嘘的标志时刻。这刻后，一切又进入了另一种叙事，没有",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 197000.0,
+        "likes": 413.0
+      }
+    },
+    "manateelazycat": {
+      "handle": "manateelazycat",
+      "display_name": "最省钱省心的 Claude 方案：国内银行卡、不需要KYC验证，稳定使用不封号  今天给大家分享一个",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 177000.0,
+        "likes": 1019.0
+      }
+    },
+    "nangongyuan": {
+      "handle": "nangongyuan",
+      "display_name": "前半截:残忍的中国人 后半截：真香 https://t.co/auqRexbvp0 南宫远 · 78",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 173000.0,
+        "likes": 782.0
+      }
+    },
+    "soulsloop99": {
+      "handle": "soulsloop99",
+      "display_name": "2007年，水均益的妻子意外瘫痪，他毫不犹豫选择和妻子离婚，女儿哭着恳求，爸爸，为了我不要离婚好不好",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 173000.0,
+        "likes": 93.0
+      }
+    },
+    "dameizhongguo3": {
+      "handle": "dameizhongguo3",
+      "display_name": "原来升职是假，替大领导排雷是真！ https://t.co/5kXSG5G0NW 千百度 · 499",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 159000.0,
+        "likes": 499.0
+      }
+    },
+    "fred834567": {
+      "handle": "Fred834567",
+      "display_name": "一定要相信我，美国人很快就会发现的：  无论他们换多少个白人，甚至是印度裔CEO，都没法像老黄那样搞",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 155000.0,
+        "likes": 1495.0
+      }
+    },
+    "wjf110": {
+      "handle": "wjf110",
+      "display_name": "还是这部最经典，把妹子给惹哭了 https://t.co/sK34Orj235 好家伙 · 315 ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 152000.0,
+        "likes": 315.0
+      }
+    },
+    "giantcutie666": {
+      "handle": "giantcutie666",
+      "display_name": "岳阳市公安局发了一个招标公告，要花275万元人民币处置一批虚拟货币  要求投标人须在香港持牌合规交易",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 147000.0,
+        "likes": 376.0
+      }
+    },
+    "cuimao": {
+      "handle": "cuimao",
+      "display_name": "CuiMao +515 粉",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 146000.0,
+        "likes": 1596.0
+      }
+    },
+    "alexcehn": {
+      "handle": "Alexcehn",
+      "display_name": "戚薇大胆呀！我好喜欢 猫菊长 · 781 赞 看过 14.3万 曝光",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 143000.0,
+        "likes": 781.0
+      }
+    },
+    "laomunova": {
+      "handle": "laomunova",
+      "display_name": "寿命全球第一，香港人为什么普遍抗老？  5个核心抗老原因：  1. 饮食多海产：香港作为海港城市，常",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 133000.0,
+        "likes": 298.0
+      }
+    },
+    "iiiinvest": {
+      "handle": "iiiinvest",
+      "display_name": "涨粉 首次夺冠 7738 粉 电鱼哥",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 123000.0,
+        "likes": 2100.0
+      }
+    },
+    "dragonhau66": {
+      "handle": "Dragonhau66",
+      "display_name": "🤷‍♀️段永平对黄仁勋回归这件事，给出了极其冷酷但又极其专业的判断。  有网友在雪球问他：10万+的",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 119000.0,
+        "likes": 123.0
+      }
+    },
+    "mylifcc": {
+      "handle": "mylifcc",
+      "display_name": "怪不得OpenAI没有发布6.2 Astra，原来Draio说停止训练他们真停了😆  根据OpenA",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 113000.0,
+        "likes": 394.0
+      }
+    },
+    "bailikoi": {
+      "handle": "BailiKoi",
+      "display_name": "涨粉 首次夺冠 3275 粉 白栎Shirly",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 111000.0,
+        "likes": 7321.0
+      }
+    },
+    "sino_go_global": {
+      "handle": "sino_go_global",
+      "display_name": "我最喜欢放水线报😆  这次放水的香港信用卡😍😍  轮到富邦家了，看着都馋🥰  直接内地证件网申，他行",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 103000.0,
+        "likes": 283.0
+      }
+    },
+    "kuangwu2008": {
+      "handle": "kuangwu2008",
+      "display_name": "有的人只出现了一瞬间，但心里的印记，却烙了一辈子❗❗❗❗ 習富哥（Follow）🌕 · 736 赞 ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 100000.0,
+        "likes": 736.0
+      }
+    },
+    "wanerfu": {
+      "handle": "wanerfu",
+      "display_name": "有件事挺奇怪。  Anthropic 把蒸馏的路堵死之后，  国内大模型一下子全卡住了。  Kimi",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 93000.0,
+        "likes": 161.0
+      }
+    },
+    "qianray_xiao": {
+      "handle": "QianRay_xiao",
+      "display_name": "窝泥🐎，这二哈明显是个惯犯！😂  一看就不是第一次干这事了 https://t.co/qVBcLmk",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 93000.0,
+        "likes": 226.0
+      }
+    },
+    "dubiancheovo": {
+      "handle": "DUBIANCHEOVO",
+      "display_name": "𝕏是一个很需要有属于自己完整的三观和世界观才能玩的软件。 我需要一张绿卡 · 2577 赞 看过 9",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 92000.0,
+        "likes": 2577.0
+      }
+    },
+    "btc__sunny": {
+      "handle": "BTC__Sunny",
+      "display_name": "嘿 @grok，请残酷地诚实。  比特币还会崩盘到新低吗？  从 YES 或 NO 开始。 http",
+      "tags": [
+        "今日爆款",
+        "加密"
+      ],
+      "metrics": {
+        "exposure": 91000.0,
+        "likes": 69.0
+      }
+    },
+    "bryankdark": {
+      "handle": "Bryankdark",
+      "display_name": "苹果教育优惠改支付宝认证了，\"羊毛党\"这回真断粮了 苹果官方商店里藏了多年的一个羊毛，教育优惠，昨天",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 88000.0,
+        "likes": 89.0
+      }
+    },
+    "rakel076": {
+      "handle": "Rakel076",
+      "display_name": "有网友贴出一组卡车场景的对比，看完真的绷不住了  同一个场景，Claude Fable 5.2 用两",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 81000.0,
         "likes": 68.0
       }
     },
-    "nake13": {
-      "handle": "nake13",
-      "display_name": "我终于想到应该怎么形容 Fable 5.2 了：  如果作为CEO，它的技术超过 CTO； 如果作为",
+    "newbeeyu": {
+      "handle": "newbeeyu",
+      "display_name": "看看评论区的人，  你就知道这些人为什么赚不到钱了 季白羽 · 186 赞 看过 7.9万 曝光",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 52000.0,
-        "likes": 337.0
+        "exposure": 79000.0,
+        "likes": 186.0
       }
     },
-    "phyrexni": {
-      "handle": "PhyrexNi",
-      "display_name": "我通过 GlassNode 和 Binance 的 API 查到了一些数据，给小伙伴们做下 Bitc",
+    "0xaa_science": {
+      "handle": "0xAA_Science",
+      "display_name": "很多外国人可能不知道，因为美国对高端 AI 芯片的出口管制，英伟达 B300 服务器（8 卡）在中国",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 52000.0,
-        "likes": 79.0
+        "exposure": 76000.0,
+        "likes": 471.0
       }
     },
-    "realwezzard": {
-      "handle": "realWeZZard",
-      "display_name": "怎么让死活不肯逆向的 Opus 5.5 乖乖听话？ 答案很简单：派个「老领导」去指挥它。  让 Op",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 51000.0,
-        "likes": 742.0
-      }
-    },
-    "salonbus1024": {
-      "handle": "salonbus1024",
-      "display_name": "老黄身上绑满了爆炸引信。 国会老爷们是不是昏聩了，只搞清楚他男女关系，低估他债务关系，NVDA 的s",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 50000.0,
-        "likes": 402.0
-      }
-    },
-    "airdrop_guard": {
-      "handle": "airdrop_guard",
-      "display_name": "2天前，一老哥把房子卖了，入金 23 万U，开杠杆抄底，现在还剩 3400。他说还有套公寓和车，准备",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 50000.0,
-        "likes": 222.0
-      }
-    },
-    "yoloswc2y3": {
-      "handle": "YOLOswc2y3",
-      "display_name": "居然进去了，卧槽 https://t.co/snhwKmKz9y 惯性失眠 · 114 赞 看过 4",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 48000.0,
-        "likes": 114.0
-      }
-    },
-    "turingou": {
-      "handle": "turingou",
-      "display_name": "红叶季再访黑川温泉♨️ 郭宇 guoyu.eth · 210 赞 看过 4.7万 曝光",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 47000.0,
-        "likes": 210.0
-      }
-    },
-    "wallstreet0name": {
-      "handle": "WallStreet0Name",
-      "display_name": "好了，开始加速下跌了，你们只需要观察我昨天视频提到的价格是否出现反应，没有反应就不开，本金大于一切，",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 47000.0,
-        "likes": 192.0
-      }
-    },
-    "mtrainier2020": {
-      "handle": "mtrainier2020",
-      "display_name": "FBI专门发了一篇通告，让各个公司，机构防范ARTEX，一个开源AI agent渗透平台的攻击。 这",
+    "fiapp_pro": {
+      "handle": "fiapp_pro",
+      "display_name": "同样的提示词，ChatGPT 6.1 sol 和 Gemini 4 hydrogen 做出来的前端，",
       "tags": [
         "今日爆款",
         "AI"
       ],
       "metrics": {
-        "exposure": 46000.0,
-        "likes": 300.0
-      }
-    },
-    "flcjbtc": {
-      "handle": "flcjbtc",
-      "display_name": "真是滑天下之大稽呀，币安高层还在密谋，目前离黑客被盗的63亿美元窟窿还有近一半没赚回来，3个月内真的",
-      "tags": [
-        "今日爆款"
-      ],
-      "metrics": {
-        "exposure": 45000.0,
+        "exposure": 75000.0,
         "likes": 94.0
       }
     },
-    "xudong07452910": {
-      "handle": "Xudong07452910",
-      "display_name": "太真佩服 Jinyan 了，是真的敢说呀，写的非常棒👍🏻，内容我不做过多解读了，跟我的观察和判断基本",
+    "shichuangang": {
+      "handle": "shichuangang",
+      "display_name": "牛逼  这个脑洞我是服气的  😂  https://t.co/q8EzFLptet 日本大誠不動産·",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 43000.0,
-        "likes": 194.0
+        "exposure": 74000.0,
+        "likes": 129.0
       }
     },
-    "ztz585266": {
-      "handle": "ztz585266",
-      "display_name": "不看脸的话，  @grok 女生最喜欢那种身材？ https://t.co/UcgFk6OExx 大",
+    "cryptoapprenti1": {
+      "handle": "cryptoapprenti1",
+      "display_name": "他的 资产全是 $bnb 却且跟币安 签了协议不让卖，都是纸面财富罢了，最后也是归零 Dr.Hash",
+      "tags": [
+        "今日爆款",
+        "加密"
+      ],
+      "metrics": {
+        "exposure": 73000.0,
+        "likes": 159.0
+      }
+    },
+    "usd666666": {
+      "handle": "usd666666",
+      "display_name": "第一次遇到开锁理由这么奇葩的女业主…… 西时珍🌎 · 134 赞 看过 7.2万 曝光",
       "tags": [
         "今日爆款"
       ],
       "metrics": {
-        "exposure": 43000.0,
-        "likes": 2.0
+        "exposure": 72000.0,
+        "likes": 134.0
       }
     },
-    "pixelaigc": {
-      "handle": "pixelaigc",
-      "display_name": "杀疯了！ ffmpeg-skill 本地剪视频 AI编程助手直接出片 让claude code, c",
+    "guagua_2016": {
+      "handle": "GuaGua_2016",
+      "display_name": "山姆超市的399羽绒服能火，证明了，只要钱够，产品质量不是问题。  只要钱够，食品安全一样不是问题。",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 71000.0,
+        "likes": 110.0
+      }
+    },
+    "wolfyxbt": {
+      "handle": "wolfyxbt",
+      "display_name": "时代变了，编程的门槛在无限降低。  不管你现在在做什么，不管你是文科生还是理科生，你都应该了解 Gi",
+      "tags": [
+        "今日爆款",
+        "科技"
+      ],
+      "metrics": {
+        "exposure": 70000.0,
+        "likes": 780.0
+      }
+    },
+    "rocky_bitcoin": {
+      "handle": "rocky_bitcoin",
+      "display_name": "最后的希望，最后一点U，全部挂在6万双币赢，抄底 #BTC ，买了11天的，年华38%，香喷喷！  ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 67000.0,
+        "likes": 94.0
+      }
+    },
+    "qingyue820": {
+      "handle": "qingyue820",
+      "display_name": "涨粉 首次夺冠 6918 粉 清月已经不困了",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 67000.0,
+        "likes": 392.0
+      }
+    },
+    "chenpapro": {
+      "handle": "chenpapro",
+      "display_name": "最近有个墨西哥纪录片，  记录了中国对全世界的影响是绝无仅有的。  谁都没想到对墨西哥毒枭，  造成",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 66000.0,
+        "likes": 469.0
+      }
+    },
+    "zemummy1": {
+      "handle": "zemummy1",
+      "display_name": "这么一看，我是不是小丑 十老板 · 121 赞 看过 6.6万 曝光",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 66000.0,
+        "likes": 121.0
+      }
+    },
+    "maxwell_scu": {
+      "handle": "maxwell_scu",
+      "display_name": "还记得那家叫哲库的公司吗？ 做芯片三年烧掉约了100 亿，是段永平烧的。  最后因为段永平是美国人，",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 62000.0,
+        "likes": 220.0
+      }
+    },
+    "jiangzhuoer2": {
+      "handle": "jiangzhuoer2",
+      "display_name": "为什么我早上不仅开了对冲空单， 还把之前抄底的小币种都割了？ https://x.com/Jiang",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 60000.0,
+        "likes": 75.0
+      }
+    },
+    "ayi_ainotes": {
+      "handle": "AYi_AInotes",
+      "display_name": "大家知道做表情包到底有多赚钱吗？闲鱼上一个普通的微信动态表情定制商品，券后 85 块一套，单店已售 ",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 59000.0,
+        "likes": 62.0,
+        "bookmarks": 2491.0
+      }
+    },
+    "kinnacheung": {
+      "handle": "kinnacheung",
+      "display_name": "正常人面对“赌博”的刺激～  禁止赌博🤣 kinnacheung · 177 赞 看过 5.9万 曝",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 59000.0,
+        "likes": 177.0
+      }
+    },
+    "sizhe_bitcat": {
+      "handle": "sizhe_bitcat",
+      "display_name": "人民日报转发的七旬农民拆掉围墙让一米的故事本来还挺感人励志的，结果扭头就有网友爆料，这个七旬农民原来",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 58000.0,
+        "likes": 267.0
+      }
+    },
+    "cloud2005n": {
+      "handle": "Cloud2005n",
+      "display_name": "不懂就问：  大家都以为黄仁勋是被三桩婚外情搞下台的，但《华尔街日报》和路透刚刚扒出来的董事会内战内",
+      "tags": [
+        "今日爆款"
+      ],
+      "metrics": {
+        "exposure": 58000.0,
+        "likes": 263.0
+      }
+    },
+    "murphychen888": {
+      "handle": "murphychen888",
+      "display_name": "“真的是币安”？这是一位订阅区小伙伴问我的问题。  说实话，这类问题当前极其敏感，容易招骂，所以我没",
+      "tags": [
+        "加密"
+      ],
+      "metrics": {
+        "exposure": 48000.0,
+        "likes": 112.0
+      }
+    },
+    "khazix0918": {
+      "handle": "Khazix0918",
+      "display_name": "这时候就能显示出大显示器的好处了... Claude、Antigravity、GPT直接三开，还是很",
       "tags": [
         "AI"
       ],
       "metrics": {
-        "exposure": 37000.0,
-        "likes": 622.0
+        "exposure": 43000.0,
+        "likes": 246.0
+      }
+    },
+    "guansi": {
+      "handle": "guansi",
+      "display_name": "一个人对两个 AI 说：“我电脑越来越卡了，帮我清理一下垃圾文件。”  GPT 接到任务，开始扫描磁",
+      "tags": [
+        "AI"
+      ],
+      "metrics": {
+        "exposure": 43000.0,
+        "likes": 119.0
+      }
+    },
+    "0xcryptochan": {
+      "handle": "0xcryptochan",
+      "display_name": "2015年6月: $BTC 突破蓝线后 183天 到复苏顶 2019年2月: $BTC 突破蓝线后 ",
+      "tags": [
+        "加密"
+      ],
+      "metrics": {
+        "exposure": 42000.0,
+        "likes": 160.0
+      }
+    },
+    "jianyi99": {
+      "handle": "jianyi99",
+      "display_name": "突然发现一个奇怪的现象！  我们天天用 AI， 美国有 ChatGPT、Claude、Grok， 中",
+      "tags": [
+        "AI"
+      ],
+      "metrics": {
+        "exposure": 42000.0,
+        "likes": 32.0
       }
     },
     "zoselicy": {
       "handle": "zoselicy",
-      "display_name": "1 夜雨 3647 粉丝 10.2万 帖均",
+      "display_name": "1 夜雨 3681 粉丝 9.5万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 102000.0,
-        "followers": 3647.0,
-        "exposure": 659000.0
+        "avg_exposure": 95000.0,
+        "followers": 3681.0,
+        "exposure": 301000.0
       }
     },
     "kaneshiro1960": {
       "handle": "kaneshiro1960",
-      "display_name": "2 Tony兄 4720 粉丝 5.3万 帖均",
+      "display_name": "2 Tony兄 4806 粉丝 5.4万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 53000.0,
-        "followers": 4720.0
+        "avg_exposure": 54000.0,
+        "followers": 4806.0,
+        "exposure": 31000.0
       }
     },
     "jay30494": {
       "handle": "jay30494",
-      "display_name": "3 Cyber Jay 2844 粉丝 4.8万 帖均",
+      "display_name": "3 Cyber Jay 2841 粉丝 4.8万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
         "avg_exposure": 48000.0,
-        "followers": 2844.0
+        "followers": 2841.0
       }
     },
     "victorask26": {
       "handle": "Victorask26",
-      "display_name": "4 Victor哥很谱 4540 粉丝 4.4万 帖均",
+      "display_name": "4 Victor哥很谱 4556 粉丝 4.6万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 44000.0,
-        "followers": 4540.0,
-        "exposure": 2731000.0
-      }
-    },
-    "mikabuwan": {
-      "handle": "MikaBuwan",
-      "display_name": "5 张不晚Mika(互版) 2977 粉丝 4.4万 帖均",
-      "tags": [
-        "黑马"
-      ],
-      "metrics": {
-        "avg_exposure": 44000.0,
-        "followers": 2977.0
+        "avg_exposure": 46000.0,
+        "followers": 4556.0
       }
     },
     "xiaodengshuo": {
       "handle": "xiaodengshuo",
-      "display_name": "6 县城小登 3278 粉丝 4.3万 帖均",
+      "display_name": "5 县城小登 3319 粉丝 4.0万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 43000.0,
-        "followers": 3278.0,
-        "exposure": 512000.0
-      }
-    },
-    "kitesrox": {
-      "handle": "kitesrox",
-      "display_name": "7 择月 4057 粉丝 2.7万 帖均",
-      "tags": [
-        "黑马"
-      ],
-      "metrics": {
-        "avg_exposure": 27000.0,
-        "followers": 4057.0,
-        "exposure": 220000.0
+        "avg_exposure": 40000.0,
+        "followers": 3319.0
       }
     },
     "chiwa_yuki2": {
       "handle": "Chiwa_Yuki2",
-      "display_name": "8 ちわゆき 2771 粉丝 2.6万 帖均",
+      "display_name": "6 ちわゆき 2811 粉丝 2.5万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 26000.0,
-        "followers": 2771.0,
-        "exposure": 243000.0
+        "avg_exposure": 25000.0,
+        "followers": 2811.0
       }
     },
     "abcnana4": {
       "handle": "abcNANA4",
-      "display_name": "9 Nana 3913 粉丝 2.6万 帖均",
+      "display_name": "7 Nana 3941 粉丝 2.4万 帖均",
       "tags": [
         "黑马"
       ],
       "metrics": {
-        "avg_exposure": 26000.0,
-        "followers": 3913.0,
-        "exposure": 665000.0
+        "avg_exposure": 24000.0,
+        "followers": 3941.0,
+        "exposure": 443000.0
+      }
+    },
+    "jessile66989354": {
+      "handle": "JessiLe66989354",
+      "display_name": "9 吒吒大王 3279 粉丝 2.2万 帖均",
+      "tags": [
+        "黑马"
+      ],
+      "metrics": {
+        "avg_exposure": 22000.0,
+        "followers": 3279.0
       }
     }
   }
